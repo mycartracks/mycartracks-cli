@@ -1,0 +1,38 @@
+{
+  "apis": {
+    "mycartracks": {
+      "base_url": "https://mycartracks.com/services/rest/v3",
+      "spec_url": "https://mycartracks.com/services/rest/openapi.json",
+      "profiles": {
+        "public": {},
+        "default": {
+          "auth": {
+            "type": "oauth-client-credentials",
+            "params": {
+              "client_id": "env:MYCARTRACKS_CLIENT_ID",
+              "client_secret": "env:MYCARTRACKS_CLIENT_SECRET",
+              "scopes": "read",
+              "token_url": "https://mycartracks.com/oauth/token"
+            }
+          },
+          "credentials": {
+            "OAuth2": {
+              "auth": {
+                "type": "oauth-client-credentials",
+                "params": {
+                  "client_id": "env:MYCARTRACKS_CLIENT_ID",
+                  "client_secret": "env:MYCARTRACKS_CLIENT_SECRET",
+                  "scopes": "read",
+                  "token_url": "https://mycartracks.com/oauth/token"
+                }
+              },
+              "satisfies": [
+                "read"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
