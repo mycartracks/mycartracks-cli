@@ -1,4 +1,4 @@
-# MyCarTracks Restish CLI
+# MyCarTracks CLI
 
 This repository contains a Restish project configuration for using the MyCarTracks API v3 as a CLI. Restish reads the OpenAPI document, generates commands dynamically, and honors the API's `x-cli-name`, `x-cli-aliases`, `x-cli-description`, `x-cli-hidden`, and `x-cli-ignore` extensions.
 
